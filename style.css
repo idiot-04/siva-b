@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    color:white;
+    background:linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+}
+
+.hero{
+    padding:40px 20px;
+}
+
+.main-photo{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 0 20px white;
+}
+
+h1{
+    font-size:40px;
+}
+
+p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    padding:10px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4d6d;
+    cursor:pointer;
+    font-size:18px;
+    margin-top:15px;
+}
+
+.gallery{
+    padding:50px 20px;
+}
+
+.photos{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.photos img{
+    width:250px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.photos img:hover{
+    transform:scale(1.05);
+}
+
+.message{
+    padding:50px 20px;
+}
+.hero{
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+body::before{
+    content:"❤️ ❤️ ❤️ ❤️ ❤️";
+    position:fixed;
+    width:100%;
+    top:20px;
+    left:0;
+    font-size:25px;
+    animation:float 8s linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-100px);
+    }
+}
